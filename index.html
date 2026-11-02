@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A family heritage directory and interactive family tree.">
+  <title>Roots & Kin — Family Heritage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#tree" aria-label="Roots and Kin home">
+        <span class="brand-mark">R<span>+</span></span>
+        <span><strong>Roots & Kin</strong><small>FAMILY HERITAGE</small></span>
+      </a>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-page="tree"><span>⌘</span> Family Tree</button>
+        <button class="nav-link" data-page="members"><span>♧</span> Members</button>
+        <button class="nav-link" data-page="statistics"><span>▥</span> Statistics</button>
+      </nav>
+      <div class="sidebar-note">
+        <span class="note-icon">✦</span>
+        <strong>Our story lives on</strong>
+        <p>Every name is a branch. Every generation is a new chapter.</p>
+      </div>
+      <div class="sidebar-foot"><span class="status-dot"></span> FAMILY ARCHIVE <span>•</span> SAMPLE DATA</div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
+        <div class="breadcrumb">Family Archive <span>/</span> <strong id="breadcrumbPage">Family Tree</strong></div>
+        <div class="topbar-right"><span class="today-label" id="todayLabel"></span><span class="avatar">RK</span></div>
+      </header>
+
+      <section class="page active" id="page-tree">
+        <div class="page-heading">
+          <div><p class="eyebrow">DISCOVER YOUR ROOTS</p><h1>Family Tree</h1><p class="subheading">Explore the people and connections that make up our family story.</p></div>
+          <div class="heading-stat"><span class="stat-icon">♧</span><span><strong id="treeMemberCount">—</strong><small>Family members</small></span></div>
+        </div>
+        <div class="toolbar">
+          <label class="search-box"><span>⌕</span><input id="treeSearch" type="search" placeholder="Search family members..." aria-label="Search family members"></label>
+          <select id="generationFilter" aria-label="Filter by generation"><option value="all">All generations</option></select>
+          <select id="genderFilter" aria-label="Filter by gender"><option value="all">All genders</option><option value="Male">Male</option><option value="Female">Female</option></select>
+          <select id="statusFilter" aria-label="Filter by status"><option value="all">Living & deceased</option><option value="living">Living</option><option value="deceased">Deceased</option><option value="inlaw">In-laws</option></select>
+          <button class="button button-light" id="resetFilters">Reset</button>
+        </div>
+        <div class="legend"><span><i class="legend-dot male"></i> Male</span><span><i class="legend-dot female"></i> Female</span><span><i class="legend-line"></i> In-law</span><span><i class="legend-faded"></i> Deceased</span></div>
+        <div id="treeContainer" class="tree-container" aria-live="polite"></div>
+      </section>
+
+      <section class="page" id="page-members">
+        <div class="page-heading">
+          <div><p class="eyebrow">THE PEOPLE BEHIND THE STORY</p><h1>Family Members</h1><p class="subheading">Browse the complete family directory and open any member's profile.</p></div>
+          <div class="heading-stat"><span class="stat-icon">♙</span><span><strong id="directoryCount">—</strong><small>Listed members</small></span></div>
+        </div>
+        <div class="panel">
+          <div class="panel-toolbar"><label class="search-box"><span>⌕</span><input id="memberSearch" type="search" placeholder="Search name, place or profession..." aria-label="Search directory"></label><span class="muted" id="memberResultCount"></span></div>
+          <div class="table-wrap"><table><thead><tr>
+            <th><button class="sort-button" data-sort="fullName">MEMBER NAME ↕</button></th>
+            <th><button class="sort-button" data-sort="gender">GENDER ↕</button></th>
+            <th><button class="sort-button" data-sort="birthYear">BIRTH YEAR ↕</button></th>
+            <th><button class="sort-button" data-sort="generation">GENERATION ↕</button></th>
+            <th><button class="sort-button" data-sort="place">LOCATION ↕</button></th>
+            <th>STATUS</th>
+          </tr></thead><tbody id="membersTableBody"></tbody></table></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-statistics">
+        <div class="page-heading"><div><p class="eyebrow">A FAMILY AT A GLANCE</p><h1>Family Statistics</h1><p class="subheading">A snapshot of our family heritage, calculated from the family dataset.</p></div><div class="heading-stat"><span class="stat-icon">▥</span><span><strong id="statsAsOf">—</strong><small>Year overview</small></span></div></div>
+        <div id="statisticsContainer"></div>
+      </section>
+
+      <footer class="footer"><span>ROOTS & KIN</span><span>Preserving stories, connecting generations.</span><span>FICTIONAL SAMPLE FAMILY</span></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="profileModal" aria-hidden="true">
+    <section class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profileName">
+      <button class="modal-close" id="closeProfile" aria-label="Close profile">×</button>
+      <div id="profileContent"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./js/controller.js"></script>
+</body>
+</html>

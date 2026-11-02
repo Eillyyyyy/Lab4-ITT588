@@ -1,0 +1,266 @@
+[
+  {
+    "id": "P001",
+    "fullName": "Abdul Rahman bin Salleh",
+    "gender": "Male",
+    "birthYear": 1938,
+    "deathYear": 2012,
+    "fatherId": null,
+    "motherId": null,
+    "spouses": [
+      {
+        "personId": "P002",
+        "status": "Married"
+      }
+    ],
+    "isInLaw": false,
+    "profession": "Farmer",
+    "address": "Kampung Seri Damai",
+    "place": "Perak",
+    "bloodGroup": "O+",
+    "generation": 1
+  },
+  {
+    "id": "P002",
+    "fullName": "Zainab binti Osman",
+    "gender": "Female",
+    "birthYear": 1942,
+    "deathYear": null,
+    "fatherId": null,
+    "motherId": null,
+    "spouses": [
+      {
+        "personId": "P001",
+        "status": "Married"
+      }
+    ],
+    "isInLaw": false,
+    "profession": "Homemaker",
+    "address": "Kampung Seri Damai",
+    "place": "Perak",
+    "bloodGroup": "A+",
+    "generation": 1
+  },
+  {
+    "id": "P003",
+    "fullName": "Hassan bin Abdul Rahman",
+    "gender": "Male",
+    "birthYear": 1962,
+    "deathYear": null,
+    "fatherId": "P001",
+    "motherId": "P002",
+    "spouses": [
+      {
+        "personId": "P004",
+        "status": "Married"
+      }
+    ],
+    "isInLaw": false,
+    "profession": "Teacher",
+    "address": "Ipoh Garden",
+    "place": "Perak",
+    "bloodGroup": "B+",
+    "generation": 2
+  },
+  {
+    "id": "P004",
+    "fullName": "Salmah binti Karim",
+    "gender": "Female",
+    "birthYear": 1965,
+    "deathYear": null,
+    "fatherId": null,
+    "motherId": null,
+    "spouses": [
+      {
+        "personId": "P003",
+        "status": "Married"
+      }
+    ],
+    "isInLaw": true,
+    "profession": "Nurse",
+    "address": "Ipoh Garden",
+    "place": "Perak",
+    "bloodGroup": "AB+",
+    "generation": 2
+  },
+  {
+    "id": "P005",
+    "fullName": "Farid bin Abdul Rahman",
+    "gender": "Male",
+    "birthYear": 1967,
+    "deathYear": null,
+    "fatherId": "P001",
+    "motherId": "P002",
+    "spouses": [
+      {
+        "personId": "P006",
+        "status": "Married"
+      }
+    ],
+    "isInLaw": false,
+    "profession": "Engineer",
+    "address": "Shah Alam",
+    "place": "Selangor",
+    "bloodGroup": "O-",
+    "generation": 2
+  },
+  {
+    "id": "P006",
+    "fullName": "Noraini binti Yusof",
+    "gender": "Female",
+    "birthYear": 1970,
+    "deathYear": null,
+    "fatherId": null,
+    "motherId": null,
+    "spouses": [
+      {
+        "personId": "P005",
+        "status": "Married"
+      }
+    ],
+    "isInLaw": true,
+    "profession": "Accountant",
+    "address": "Shah Alam",
+    "place": "Selangor",
+    "bloodGroup": "A-",
+    "generation": 2
+  },
+  {
+    "id": "P007",
+    "fullName": "Aisyah binti Hassan",
+    "gender": "Female",
+    "birthYear": 1988,
+    "deathYear": null,
+    "fatherId": "P003",
+    "motherId": "P004",
+    "spouses": [
+      {
+        "personId": "P008",
+        "status": "Married"
+      }
+    ],
+    "isInLaw": false,
+    "profession": "Architect",
+    "address": "Petaling Jaya",
+    "place": "Selangor",
+    "bloodGroup": "B+",
+    "generation": 3
+  },
+  {
+    "id": "P008",
+    "fullName": "Daniel Lim Wei Jian",
+    "gender": "Male",
+    "birthYear": 1987,
+    "deathYear": null,
+    "fatherId": null,
+    "motherId": null,
+    "spouses": [
+      {
+        "personId": "P007",
+        "status": "Married"
+      }
+    ],
+    "isInLaw": true,
+    "profession": "Graphic Designer",
+    "address": "Petaling Jaya",
+    "place": "Selangor",
+    "bloodGroup": "O+",
+    "generation": 3
+  },
+  {
+    "id": "P009",
+    "fullName": "Amir bin Hassan",
+    "gender": "Male",
+    "birthYear": 1991,
+    "deathYear": null,
+    "fatherId": "P003",
+    "motherId": "P004",
+    "spouses": [],
+    "isInLaw": false,
+    "profession": "Software Developer",
+    "address": "Ipoh",
+    "place": "Perak",
+    "bloodGroup": "AB-",
+    "generation": 3
+  },
+  {
+    "id": "P010",
+    "fullName": "Sara binti Farid",
+    "gender": "Female",
+    "birthYear": 1994,
+    "deathYear": null,
+    "fatherId": "P005",
+    "motherId": "P006",
+    "spouses": [],
+    "isInLaw": false,
+    "profession": "Pharmacist",
+    "address": "Shah Alam",
+    "place": "Selangor",
+    "bloodGroup": "A+",
+    "generation": 3
+  },
+  {
+    "id": "P011",
+    "fullName": "Adam bin Farid",
+    "gender": "Male",
+    "birthYear": 1997,
+    "deathYear": null,
+    "fatherId": "P005",
+    "motherId": "P006",
+    "spouses": [],
+    "isInLaw": false,
+    "profession": "Student",
+    "address": "Shah Alam",
+    "place": "Selangor",
+    "bloodGroup": "O+",
+    "generation": 3
+  },
+  {
+    "id": "P012",
+    "fullName": "Maya binti Daniel",
+    "gender": "Female",
+    "birthYear": 2015,
+    "deathYear": null,
+    "fatherId": "P008",
+    "motherId": "P007",
+    "spouses": [],
+    "isInLaw": false,
+    "profession": "Student",
+    "address": "Petaling Jaya",
+    "place": "Selangor",
+    "bloodGroup": "B+",
+    "generation": 4
+  },
+  {
+    "id": "P013",
+    "fullName": "Irfan bin Daniel",
+    "gender": "Male",
+    "birthYear": 2018,
+    "deathYear": null,
+    "fatherId": "P008",
+    "motherId": "P007",
+    "spouses": [],
+    "isInLaw": false,
+    "profession": "Child",
+    "address": "Petaling Jaya",
+    "place": "Selangor",
+    "bloodGroup": "O+",
+    "generation": 4
+  },
+  {
+    "id": "P014",
+    "fullName": "Fatimah binti Abdul Rahman",
+    "gender": "Female",
+    "birthYear": 1964,
+    "deathYear": 2020,
+    "fatherId": "P001",
+    "motherId": "P002",
+    "spouses": [],
+    "isInLaw": false,
+    "profession": "Librarian",
+    "address": "Taiping",
+    "place": "Perak",
+    "bloodGroup": "A+",
+    "generation": 2
+  }
+]
